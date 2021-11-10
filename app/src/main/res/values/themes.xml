@@ -20,7 +20,7 @@
 
     </style>
     <style name="Text_Subtitles">
-        <item name="android:textSize">16dp</item>
+        <item name="android:textSize">24dp</item>
         <item name="android:textColor">#E71E11</item>
         <item name="android:textStyle">bold</item>
     </style>
