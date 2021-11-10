@@ -116,7 +116,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView9"
             app:srcCompat="@drawable/mapa_iglesia_trinidad"
-            tools:ignore="ContentDescription" />
+            tools:ignore="ContentDescription,ImageContrastCheck" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
