@@ -7,4 +7,8 @@
     <string name="title_description">Descripción</string>
     <string name="text_description">Fue construida en 1.870 por orden del Marqués de Surba y Bonza, con un estilo colonial. Es la más antigua del municipio. La parroquia La Trinidad de Duitama, fue constituida el 1 de Enero de 1.971 según decreto N° 01/71 por el Excelentísimo Señor Obispo Julio Franco Arango. Su primer párroco fue el Reverendo Padre: Luis Levi Leguizamón López.</string>
     <string name="title_localization">Localización</string>
+    <string name="registro">Registro de un lugar</string>
+    <string name="registrar">registrar</string>
+    <string name="estatura">Estatura</string>
+    <string name="info">"Nombre: %s, Estatura: %f"</string>
 </resources>

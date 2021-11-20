@@ -21,7 +21,7 @@
             tools:ignore="ContentDescription" />
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/titulo_text_view"
             style="@style/Title_Place"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -42,7 +42,7 @@
             android:layout_marginTop="32dp"
             android:text="@string/IconLocalization"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+            app:layout_constraintTop_toBottomOf="@+id/titulo_text_view" />
 
         <TextView
             android:id="@+id/textView5"
@@ -64,7 +64,7 @@
             android:layout_marginTop="20dp"
             android:text="@string/Calification"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+            app:layout_constraintTop_toBottomOf="@+id/titulo_text_view" />
 
         <TextView
             android:id="@+id/textView7"
@@ -76,7 +76,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.084"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/textView2" />
+            app:layout_constraintTop_toTopOf="@+id/titulo_text_view" />
 
         <TextView
             android:id="@+id/textView8"
