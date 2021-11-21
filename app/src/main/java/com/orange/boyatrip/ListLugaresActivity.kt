@@ -1,0 +1,11 @@
+package com.orange.boyatrip
+
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+
+class ListLugaresActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_list_lugares)
+    }
+}

@@ -11,4 +11,7 @@
     <string name="registrar">registrar</string>
     <string name="estatura">Estatura</string>
     <string name="info">"Nombre: %s, Estatura: %f"</string>
+    <string name="catedral">Catedral de Duitama</string>
+    <string name="Puntuacion">Puntuacion: 4.0</string>
+    <string name="DespricionPO1">Descripcion breve del sitio turistico en cuestion y de como llegar a el</string>
 </resources>
