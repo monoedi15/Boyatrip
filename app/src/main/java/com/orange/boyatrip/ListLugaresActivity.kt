@@ -3,6 +3,7 @@ package com.orange.boyatrip
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.DividerItemDecoration
+import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
 class ListLugaresActivity : AppCompatActivity() {
@@ -23,8 +24,18 @@ class ListLugaresActivity : AppCompatActivity() {
 
         lugaresInteresAdapter = LugaresInteresAdapter(listaLugares)
 
-        lugaresInteresRecyclerView.addItemDecoration(DividerItemDecoration(this,DividerItemDecoration.VERTICAL))
-        lugaresInteresRecyclerView.adapter = lugaresInteresAdapter
+        //lugaresInteresRecyclerView.addItemDecoration(
+            //DividerItemDecoration(
+                //this,DividerItemDecoration.VERTICAL
+            //)
+        //)
+
+        lugaresInteresRecyclerView.apply{
+            layoutManager = LinearLayoutManager(context)
+            adapter = lugaresInteresAdapter
+            setHasFixedSize(false)
+        }
+
     }
 
     private fun createMockLugaresInteres() : ArrayList<SitioInteres>{

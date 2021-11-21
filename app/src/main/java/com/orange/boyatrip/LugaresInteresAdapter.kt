@@ -7,30 +7,28 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class LugaresInteresAdapter (private val lugarisinteresList: ArrayList<SitioInteres>) : RecyclerView.Adapter<LugaresInteresAdapter.ViewHolder>() {
+class LugaresInteresAdapter (private val lugarisinteresList: ArrayList<SitioInteres>) : RecyclerView.Adapter<LugaresInteresAdapter.LugaresViewHolder>() {
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.activity_list_lugares,parent,false)
-        return ViewHolder(view)
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): LugaresViewHolder {
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.card_view_lugar_item,parent,false)
+        return LugaresViewHolder(view)
     }
 
-    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: LugaresViewHolder, position: Int) {
         val sitiosInteres = lugarisinteresList[position]
         holder.bind(sitiosInteres)
     }
 
-    override fun getItemCount(): Int {
-        return lugarisinteresList.size
-    }
+    override fun getItemCount(): Int = lugarisinteresList.size
 
-    class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
-        private var tituloPOTextView : TextView = itemView.findViewById<>(R.id.tituloPO_text_view)
-        private var puntuacionPOTextview : TextView = itemView.findViewById<>(R.id.puntuacionPO_text_view)
-        private var descripcionPOTextview : TextView = itemView.findViewById<>(R.id.descripcionPO_text_view)
-        private var pictureImageView: ImageView = itemView.findViewById<>(R.id.picture_image_view)
+    class LugaresViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
+        private var tituloPOTextView : TextView = itemView.findViewById(R.id.tituloPO_text_view)
+        private var puntuacionPOTextview : TextView = itemView.findViewById(R.id.puntuacionPO_text_view)
+        private var descripcionPOTextview : TextView = itemView.findViewById(R.id.descripcionPO_text_view)
+        private var pictureImageView: ImageView = itemView.findViewById(R.id.picture_image_view)
         fun bind(sitiosInteres:SitioInteres){
             tituloPOTextView.text = sitiosInteres.nombre
-            puntuacionPOTextview = sitiosInteres.puntuacion
+            puntuacionPOTextview.text = sitiosInteres.puntuacion.toString()
             descripcionPOTextview.text = sitiosInteres.descripcion
             //picture
 
