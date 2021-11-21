@@ -68,6 +68,7 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
                 android:text="@string/DespricionPO1"
+                android:textSize="12sp"
                 app:layout_constraintStart_toEndOf="@+id/picture_image_view"
                 app:layout_constraintTop_toBottomOf="@+id/puntuacionPO_text_view" />
         </androidx.constraintlayout.widget.ConstraintLayout>

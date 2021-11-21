@@ -33,6 +33,7 @@ class LugaresInteresAdapter (private val lugarisinteresList: ArrayList<SitioInte
             puntuacionPOTextview = sitiosInteres.puntuacion
             descripcionPOTextview.text = sitiosInteres.descripcion
             //picture
+
         }
 
     }
