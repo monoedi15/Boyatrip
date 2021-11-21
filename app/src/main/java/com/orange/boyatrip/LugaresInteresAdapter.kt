@@ -6,6 +6,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.squareup.picasso.Picasso
 
 class LugaresInteresAdapter (private val lugarisinteresList: ArrayList<SitioInteres>) : RecyclerView.Adapter<LugaresInteresAdapter.LugaresViewHolder>() {
 
@@ -30,9 +31,7 @@ class LugaresInteresAdapter (private val lugarisinteresList: ArrayList<SitioInte
             tituloPOTextView.text = sitiosInteres.nombre
             puntuacionPOTextview.text = sitiosInteres.puntuacion.toString()
             descripcionPOTextview.text = sitiosInteres.descripcion
-            //picture
-
+            Picasso.get().load(sitiosInteres.urlpicture).into(pictureImageView);
         }
-
     }
 }
