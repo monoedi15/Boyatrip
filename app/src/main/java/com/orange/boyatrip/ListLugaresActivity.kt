@@ -5,13 +5,13 @@ import android.os.Bundle
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.google.gson.Gson
 
 class ListLugaresActivity : AppCompatActivity() {
 
-    private lateinit var listaLugares: ArrayList<SitioInteres>
+    private lateinit var listaLugares: ArrayList<SitiosInteresItem>
     private lateinit var lugaresInteresAdapter: LugaresInteresAdapter
     private lateinit var lugaresInteresRecyclerView: RecyclerView
-
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,17 +20,11 @@ class ListLugaresActivity : AppCompatActivity() {
 
         lugaresInteresRecyclerView = findViewById(R.id.lugares_recycler_view)
 
-        listaLugares = createMockLugaresInteres()
-
+        // listaLugares = createMockLugaresInteres()    -esta linea era para llamar la lista desde la linea 39
+        listaLugares = LoadMockListaLugaresFromJson()
         lugaresInteresAdapter = LugaresInteresAdapter(listaLugares)
 
-        //lugaresInteresRecyclerView.addItemDecoration(
-            //DividerItemDecoration(
-                //this,DividerItemDecoration.VERTICAL
-            //)
-        //)
-
-        lugaresInteresRecyclerView.apply{
+        lugaresInteresRecyclerView.apply {
             layoutManager = LinearLayoutManager(context)
             adapter = lugaresInteresAdapter
             setHasFixedSize(false)
@@ -38,7 +32,16 @@ class ListLugaresActivity : AppCompatActivity() {
 
     }
 
-    private fun createMockLugaresInteres() : ArrayList<SitioInteres>{
+    private fun LoadMockListaLugaresFromJson(): ArrayList<SitiosInteresItem> {
+        val sitiosInteresString: String =
+            applicationContext.assets.open("sitiosInteres.json").bufferedReader()
+                .use { it.readText() }
+        val gson = Gson()
+        val data = gson.fromJson(sitiosInteresString, SitiosInteres::class.java)
+        return data
+    }
+
+    /*private fun createMockLugaresInteres() : ArrayList<SitioInteres>{
         return arrayListOf(
             SitioInteres(nombre = "CATEDRAL DE DUITAMA",
                 descripcion = "templo religioso de culto católico bajo la advocación de San Lorenzo mártir, está ubicada en la zona céntrica de la ciudad de Duitama (Colombia) y pertenece al gran conjunto de templos que se encuentran en el centro de la ciudad; en el caso de la catedral, frente al Parque de los Libertadores.",
@@ -77,4 +80,6 @@ class ListLugaresActivity : AppCompatActivity() {
             )
         )
     }
+}
+     */
 }

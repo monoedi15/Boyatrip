@@ -8,7 +8,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.squareup.picasso.Picasso
 
-class LugaresInteresAdapter (private val lugarisinteresList: ArrayList<SitioInteres>) : RecyclerView.Adapter<LugaresInteresAdapter.LugaresViewHolder>() {
+class LugaresInteresAdapter (private val lugarisinteresList: ArrayList<SitiosInteresItem>) : RecyclerView.Adapter<LugaresInteresAdapter.LugaresViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): LugaresViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.card_view_lugar_item,parent,false)
@@ -27,7 +27,7 @@ class LugaresInteresAdapter (private val lugarisinteresList: ArrayList<SitioInte
         private var puntuacionPOTextview : TextView = itemView.findViewById(R.id.puntuacionPO_text_view)
         private var descripcionPOTextview : TextView = itemView.findViewById(R.id.descripcionPO_text_view)
         private var pictureImageView: ImageView = itemView.findViewById(R.id.picture_image_view)
-        fun bind(sitiosInteres:SitioInteres){
+        fun bind(sitiosInteres:SitiosInteresItem){
             tituloPOTextView.text = sitiosInteres.nombre
             puntuacionPOTextview.text = sitiosInteres.puntuacion.toString()
             descripcionPOTextview.text = sitiosInteres.descripcion
