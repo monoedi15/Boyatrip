@@ -39,13 +39,13 @@
             <TextView
                 android:id="@+id/tituloPO_text_view"
                 style="@style/Title_Place"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
+                android:layout_width="154dp"
+                android:layout_height="46dp"
+                android:layout_marginTop="16dp"
                 android:text="@string/catedral"
                 android:textSize="16sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.619"
+                app:layout_constraintHorizontal_bias="0.525"
                 app:layout_constraintStart_toEndOf="@+id/picture_image_view"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -63,12 +63,14 @@
 
             <TextView
                 android:id="@+id/descripcionPO_text_view"
-                android:layout_width="177dp"
-                android:layout_height="60dp"
+                android:layout_width="166dp"
+                android:layout_height="59dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
                 android:text="@string/DespricionPO1"
                 android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/picture_image_view"
                 app:layout_constraintTop_toBottomOf="@+id/puntuacionPO_text_view" />
         </androidx.constraintlayout.widget.ConstraintLayout>
