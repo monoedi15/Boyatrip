@@ -1,4 +1,4 @@
-package com.orange.boyatrip
+package com.orange.boyatrip.model
 
 
 import com.google.gson.annotations.SerializedName

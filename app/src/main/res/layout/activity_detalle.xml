@@ -8,10 +8,10 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:context=".MainActivity">
+        tools:context=".detalle.MainActivity">
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/picture_image_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintEnd_toEndOf="parent"
@@ -31,7 +31,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+            app:layout_constraintTop_toBottomOf="@+id/picture_image_view" />
 
         <TextView
             android:id="@+id/textView3"
@@ -45,7 +45,7 @@
             app:layout_constraintTop_toBottomOf="@+id/titulo_text_view" />
 
         <TextView
-            android:id="@+id/textView5"
+            android:id="@+id/calificacion_text_view"
             style="@style/Text_Description"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -53,10 +53,10 @@
             android:layout_marginTop="8dp"
             android:text="@string/ValueCalification"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+            app:layout_constraintTop_toBottomOf="@+id/califiacion_localizacion_text_view" />
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/califiacion_localizacion_text_view"
             style="@style/Text_Description"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -67,7 +67,7 @@
             app:layout_constraintTop_toBottomOf="@+id/titulo_text_view" />
 
         <TextView
-            android:id="@+id/textView7"
+            android:id="@+id/label_descripcion_text_view"
             style="@style/Text_Subtitles"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -79,7 +79,7 @@
             app:layout_constraintTop_toTopOf="@+id/titulo_text_view" />
 
         <TextView
-            android:id="@+id/textView8"
+            android:id="@+id/descripcion_text_view"
             style="@style/Text_Description"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -89,11 +89,11 @@
             android:text="@string/text_description"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView7" />
+            app:layout_constraintTop_toBottomOf="@+id/label_descripcion_text_view" />
 
         <TextView
 
-            android:id="@+id/textView9"
+            android:id="@+id/label_localizacion_text_view"
             style="@style/Text_Subtitles"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -103,7 +103,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView8" />
+            app:layout_constraintTop_toBottomOf="@+id/descripcion_text_view" />
 
         <ImageView
             android:id="@+id/imageView2"
@@ -114,7 +114,7 @@
             android:layout_marginEnd="24dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView9"
+            app:layout_constraintTop_toBottomOf="@+id/label_localizacion_text_view"
             app:srcCompat="@drawable/mapa_iglesia_trinidad"
             tools:ignore="ContentDescription,ImageContrastCheck" />
 

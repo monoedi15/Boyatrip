@@ -1,11 +1,13 @@
-package com.orange.boyatrip
+package com.orange.boyatrip.list
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.gson.Gson
+import com.orange.boyatrip.R
+import com.orange.boyatrip.model.SitiosInteres
+import com.orange.boyatrip.model.SitiosInteresItem
 
 class ListLugaresActivity : AppCompatActivity() {
 
