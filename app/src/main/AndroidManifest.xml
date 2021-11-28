@@ -24,8 +24,9 @@
             android:exported="true">
         </activity>
         <activity
-            android:name=".detalle.MainActivity"
-            android:exported="true"></activity>
+            android:name=".detalle.DetalleActivity"
+            android:exported="true">
+        </activity>
     </application>
 
 </manifest>
