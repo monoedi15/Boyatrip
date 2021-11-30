@@ -35,6 +35,7 @@ class LugaresInteresAdapter (
         private var puntuacionPOTextview : TextView = itemView.findViewById(R.id.puntuacionPO_text_view)
         private var descripcionPOTextview : TextView = itemView.findViewById(R.id.descripcionPO_text_view)
         private var pictureImageView: ImageView = itemView.findViewById(R.id.picture_image_view)
+
         fun bind(sitiosInteres: SitiosInteresItem){
             tituloPOTextView.text = sitiosInteres.nombre
             puntuacionPOTextview.text = sitiosInteres.puntuacion.toString()
