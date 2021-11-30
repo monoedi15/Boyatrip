@@ -7,7 +7,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import com.faberhurt.boyatrip_fragment.databinding.FragmentListBinding
 import com.faberhurt.boyatrip_fragment.list.LugaresInteresAdapter
 import com.faberhurt.boyatrip_fragment.model.SitiosInteres
@@ -18,22 +17,22 @@ import com.google.gson.Gson
 class ListFragment : Fragment() {
 
     private lateinit var listaLugares: ArrayList<SitiosInteresItem>
-    private lateinit var ListBinding: FragmentListBinding
+    private lateinit var listBinding: FragmentListBinding
     private lateinit var lugaresInteresAdapter: LugaresInteresAdapter
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        ListBinding = FragmentListBinding.inflate(inflater, container, false)
-        return ListBinding.root
+        listBinding = FragmentListBinding.inflate(inflater, container, false)
+        return listBinding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         listaLugares = LoadMockListaLugaresFromJson()
         lugaresInteresAdapter = LugaresInteresAdapter(listaLugares, onItemClicked = { onSiteClicked(it) } )
-        ListBinding.lugaresRecyclerView.apply {
+        listBinding.lugaresRecyclerView.apply {
             layoutManager = LinearLayoutManager(context)
             adapter = lugaresInteresAdapter
             setHasFixedSize(false)
