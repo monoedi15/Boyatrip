@@ -34,4 +34,4 @@ class BottomActivity : AppCompatActivity() {
         navView.setupWithNavController(navController)
     }
 }
-//bottom
+//bottommm
