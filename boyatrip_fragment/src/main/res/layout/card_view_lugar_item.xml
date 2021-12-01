@@ -75,4 +75,6 @@
                 app:layout_constraintTop_toBottomOf="@+id/puntuacionPO_text_view" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
