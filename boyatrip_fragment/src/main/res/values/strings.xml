@@ -16,4 +16,8 @@
     <string name="catedral">Catedral de Duitama</string>
     <string name="Puntuacion">Puntuacion: 4.0</string>
     <string name="DespricionPO1">Descripcion breve del sitio turistico en cuestion y de como llegar a el</string>
+
+    <!-- Sync Preferences -->
+
+    <string name="notifications">Notificaciones</string>
 </resources>

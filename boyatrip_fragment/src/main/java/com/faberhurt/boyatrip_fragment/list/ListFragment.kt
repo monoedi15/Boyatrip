@@ -43,7 +43,6 @@ class ListFragment : Fragment() {
     private fun onSiteClicked(sitioTuristico: SitiosInteresItem) {
         findNavController().navigate(ListFragmentDirections.actionListFragmentToDetailFragment(sitioTuristico))
 
-
     }
 
     private fun LoadMockListaLugaresFromJson(): ArrayList<SitiosInteresItem> {
