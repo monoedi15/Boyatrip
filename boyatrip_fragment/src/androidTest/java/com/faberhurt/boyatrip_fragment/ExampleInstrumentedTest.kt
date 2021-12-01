@@ -21,4 +21,4 @@ class ExampleInstrumentedTest {
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
         assertEquals("com.faberhurt.boyatrip_fragment", appContext.packageName)
     }
-}
+}//TODO

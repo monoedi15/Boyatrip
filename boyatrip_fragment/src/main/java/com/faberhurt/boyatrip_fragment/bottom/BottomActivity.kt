@@ -34,3 +34,4 @@ class BottomActivity : AppCompatActivity() {
         navView.setupWithNavController(navController)
     }
 }
+//TODO
