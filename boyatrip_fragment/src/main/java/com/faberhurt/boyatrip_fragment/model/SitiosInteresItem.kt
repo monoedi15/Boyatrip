@@ -14,3 +14,4 @@ data class SitiosInteresItem(
     @SerializedName("urlpicture")
     val urlpicture: String
 ):Serializable
+//TODO

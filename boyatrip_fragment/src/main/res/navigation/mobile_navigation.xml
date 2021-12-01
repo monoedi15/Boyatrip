@@ -34,4 +34,6 @@
         android:id="@+id/navigation_preference"
         android:name="com.faberhurt.boyatrip_fragment.preference.SettingsFragment"
         android:label="SettingsFragment" />
+
+
 </navigation>

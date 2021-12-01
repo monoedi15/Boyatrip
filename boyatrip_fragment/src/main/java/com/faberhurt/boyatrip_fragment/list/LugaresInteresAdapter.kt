@@ -42,4 +42,4 @@ class LugaresInteresAdapter (
             Picasso.get().load(sitiosInteres.urlpicture).into(pictureImageView)
         }
     }
-}
+}//TODO
