@@ -9,6 +9,7 @@ import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.faberhurt.boyatrip_fragment.databinding.FragmentListBinding
 import com.faberhurt.boyatrip_fragment.list.LugaresInteresAdapter
+import com.faberhurt.boyatrip_fragment.main.MainActivity
 import com.faberhurt.boyatrip_fragment.model.SitiosInteres
 import com.faberhurt.boyatrip_fragment.model.SitiosInteresItem
 import com.google.gson.Gson
@@ -20,6 +21,7 @@ class ListFragment : Fragment() {
     private lateinit var listBinding: FragmentListBinding
     private lateinit var lugaresInteresAdapter: LugaresInteresAdapter
 
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -30,6 +32,7 @@ class ListFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        (activity as MainActivity?)?.hideIcon()
         listaLugares = LoadMockListaLugaresFromJson()
         lugaresInteresAdapter = LugaresInteresAdapter(listaLugares, onItemClicked = { onSiteClicked(it) } )
         listBinding.lugaresRecyclerView.apply {
@@ -41,7 +44,7 @@ class ListFragment : Fragment() {
 
 
     private fun onSiteClicked(sitioTuristico: SitiosInteresItem) {
-        findNavController().navigate(ListFragmentDirections.actionListFragmentToDetailFragment(sitioTuristico))
+        findNavController().navigate(ListFragmentDirections.actionNavigationListToNavigationDetail(sitioTuristico))
 
     }
 
