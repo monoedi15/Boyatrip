@@ -1,4 +1,4 @@
-package com.orange.boyatrip.list
+package com.faberhurt.boyatrip_fragment.list
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,8 +6,8 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.orange.boyatrip.R
-import com.orange.boyatrip.model.SitiosInteresItem
+import com.faberhurt.boyatrip_fragment.R
+import com.faberhurt.boyatrip_fragment.model.SitiosInteresItem
 import com.squareup.picasso.Picasso
 
 class LugaresInteresAdapter (
@@ -35,7 +35,6 @@ class LugaresInteresAdapter (
         private var puntuacionPOTextview : TextView = itemView.findViewById(R.id.puntuacionPO_text_view)
         private var descripcionPOTextview : TextView = itemView.findViewById(R.id.descripcionPO_text_view)
         private var pictureImageView: ImageView = itemView.findViewById(R.id.picture_image_view)
-
         fun bind(sitiosInteres: SitiosInteresItem){
             tituloPOTextView.text = sitiosInteres.nombre
             puntuacionPOTextview.text = sitiosInteres.puntuacion.toString()

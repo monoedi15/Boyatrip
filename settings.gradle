@@ -8,3 +8,4 @@ dependencyResolutionManagement {
 }
 rootProject.name = "Boyatrip"
 include ':app'
+include ':boyatrip_fragment'
