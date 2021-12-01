@@ -9,10 +9,10 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".RegistroLugares">
+        tools:context=".registro.RegistroLugares">
 
         <TextView
-            android:id="@+id/titulo_text_view"
+            android:id="@+id/nombre_text_view"
             style="@style/Title_Place"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -57,7 +57,7 @@
             android:minHeight="48dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/titulo_text_view" />
+            app:layout_constraintTop_toBottomOf="@+id/nombre_text_view" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/estaturaTestInputLayout"

@@ -1,7 +1,8 @@
-package com.orange.boyatrip
+package com.faberhurt.boyatrip_fragment.model
 
 
 import com.google.gson.annotations.SerializedName
+import java.io.Serializable
 
 data class SitiosInteresItem(
     @SerializedName("descripcion")
@@ -12,4 +13,4 @@ data class SitiosInteresItem(
     val puntuacion: Int,
     @SerializedName("urlpicture")
     val urlpicture: String
-)
+):Serializable

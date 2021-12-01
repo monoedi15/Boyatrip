@@ -1,21 +1,15 @@
 [
   {
     "nombre" : "CATEDRAL DE DUITAMA",
-    "descripcion" : "templo religioso de culto católico bajo la advocación de San Lorenzo mártir, está ubicada en la zona céntrica de la ciudad de Duitama (Colombia) y pertenece al gran conjunto de templos que se encuentran en el centro de la ciudad; en el caso de la catedral, frente al Parque de los Libertadores.",
+    "descripcion" : "Templo religioso de culto católico bajo la advocación de San Lorenzo mártir, está ubicada en la zona céntrica de la ciudad de Duitama (Colombia) y pertenece al gran conjunto de templos que se encuentran en el centro de la ciudad; en el caso de la catedral, frente al Parque de los Libertadores.",
     "puntuacion" : 4,
-    "urlpicture": "http://4.bp.blogspot.com/-78Ak7ZT1I_o/Uj8WN8_lSMI/AAAAAAAAABk/hoByMD_f3TM/s1600/4.jpg"
+    "urlpicture": "https://i.pinimg.com/originals/1a/72/14/1a72140f0a810a446a37ed05e2a02f36.jpg"
   },
   {
     "nombre": "SENDERO LA ZARZA",
-    "descripcion": "Es un sendero que parte en un ecosistema de bosque andino bordeando una quebrada de un pequeño río, pasando por una alta cascada rocosa, para finalizar en un ecosistema de páramo.",
+    "descripcion": "El sendero ecológico la zarza es un conjunto de caminos indígenas y de herradura que parte de un ecosistema de bosque andino; en sus inmediaciones cruza un pequeño río, pasando por una alta cascada rocosa, para finalizar en un ecosistema de páramo.\n\nAntes de mediados del siglo pasado estos senderos eran un corredor importante para la comunicación entre los habitantes de Santander con la región de Tundama en Boyacá y los llanos orientales.\n\nEn este lugar se podrá disfrutar de la cultura de la región, el ecoturismo además de la conservación del medio ambiente en un ecosistema de bosque alto andino, subpáramo y páramo que permitirán vivir una experiencia inolvidable a las personas que disfrutan de la naturaleza.\n\nEl sendero ecológico la zarsa está ubicado en la vereda la trinidad a 7.5 km de la cabecera municipal de Duitama - Boyacá y a una altitud entre 2650 a 3550 m.s.n.m.\n",
     "puntuacion": 5,
     "urlpicture": "https://descubreboyaca.com/wp-content/uploads/2019/12/sendero-la-zarza-duitama-e1576800614511.jpg"
-  },
-  {
-    "nombre" : "PARQUE LOS LIBERTADORES",
-    "descripcion": "Conserva en el centro un árbol que ha sido testigo de desarrollo de la ciudad y que según dicen los historiadores, en él se recostaba a descansar el Cacique Tundama",
-    "puntuacion": 4,
-    "urlpicture": "https://situr.boyaca.gov.co/wp-content/uploads/2017/07/parque-libertadores.png"
   },
   {
     "nombre": "PUEBLITO BOYACENSE",
@@ -24,14 +18,8 @@
     "urlpicture": "https://descubreboyaca.com/wp-content/uploads/2019/11/pueblito-boyacense.jpg"
   },
   {
-    "nombre": "MONUMENTO A LOS LANCEROS",
-    "descripcion": "Se le considera el monumento más grande de Colombia y en él se destaca la carga de los 14 lanceros al mando del Coronel Juan José Rondón.",
-    "puntuacion": 3,
-    "urlpicture": "https://i.ytimg.com/vi/cv-AsRtIGYA/maxresdefault.jpg"
-  },
-  {
     "nombre": "PARAMO PAN DE AZUCAR",
-    "descripcion": " Está a 2850 msnm en inmediaciones de Duitama y Santa Rosa de Viterbo, tiene una laguna que alimenta al río Surba",
+    "descripcion": "Localizado al norte del municipio, el páramo pan de azúcar es de gran importancia por la cantidad de fuentes hídricas que emergen de él. Entre el principal se encuentra el río la Surba, la cual es una de las principales fuentes hídricas que surten de agua a la población del municipio.\n\nEl páramo cuenta con distintos atractivos turísticos, como la laguna pan de azúcar, donde a partir del sendero que conduce a la laguna podrá observar la quebrada Andalucía, caracterizada por formar una cascada de gran altura, los humedales Andalucía y la quebrada de parrales con una caída libre de 10 metros de alto. Otro de los atractivos del páramo es el mirador del Río Surba, del cual se podrá observar el río Suba, humedales y afloramientos de tierra. \n\nEl mirador de piedra, se localiza en lo más alto del sendero desde el cual podrá observar la superficie de la cuenca del río Pan de azúcar y el río Surba. \n",
     "puntuacion": 5,
     "urlpicture": "https://s2.wklcdn.com/image_84/2534239/30550905/19581407.jpg"
   },
@@ -40,5 +28,17 @@
     "descripcion": "Está situado en el lado occidental de la cordillera oriental entre los 3.100 y 4.280 metros sobre el nivel del mar y forma parte de un corredor de extensos páramos y bosques andinos conocido como Guantiva-La Rusia.",
     "puntuacion": 4,
     "urlpicture": "https://live.staticflickr.com/2778/4129511103_996b825262_b.jpg"
+  },
+  {
+    "nombre": "MONUMENTO A LOS LANCEROS",
+    "descripcion": "Se le considera el monumento más grande de Colombia y en él se destaca la carga de los 14 lanceros al mando del Coronel Juan José Rondón.",
+    "puntuacion": 3,
+    "urlpicture": "https://i.ytimg.com/vi/cv-AsRtIGYA/maxresdefault.jpg"
+  },
+  {
+    "nombre" : "PARQUE LOS LIBERTADORES",
+    "descripcion": "Conserva en el centro un árbol que ha sido testigo de desarrollo de la ciudad y que según dicen los historiadores, en él se recostaba a descansar el Cacique Tundama",
+    "puntuacion": 3,
+    "urlpicture": "https://situr.boyaca.gov.co/wp-content/uploads/2017/07/parque-libertadores.png"
   }
 ]

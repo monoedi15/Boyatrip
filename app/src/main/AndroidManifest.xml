@@ -11,7 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Boyatrip">
         <activity
-            android:name=".ListLugaresActivity"
+            android:name=".list.ListLugaresActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,12 +20,13 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".RegistroLugares"
+            android:name=".registro.RegistroLugares"
             android:exported="true">
         </activity>
         <activity
-            android:name=".MainActivity"
-            android:exported="true"></activity>
+            android:name=".detalle.DetalleActivity"
+            android:exported="true">
+        </activity>
     </application>
 
 </manifest>
