@@ -12,28 +12,28 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Boyatrip">
         <activity
-            android:name=".drawer.DrawerActivity"
+            android:name=".tabbed.TabbedActivity"
             android:exported="true"
-            android:label="@string/title_activity_drawer"
+            android:label="@string/title_activity_tabbed"
             android:theme="@style/Theme.Boyatrip.NoActionBar">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
 
-        </activity>
+    <activity
+        android:name=".drawer.DrawerActivity"
+        android:exported="true"
+        android:label="@string/title_activity_drawer"
+        android:theme="@style/Theme.Boyatrip.NoActionBar" />
+    <activity
+        android:name=".bottom.BottomActivity"
+        android:exported="true"
+        android:label="@string/title_activity_bottom" />
+    <activity
+        android:name=".main.MainActivity"
+        android:exported="true" />
+</application>
 
-        <activity
-            android:name=".bottom.BottomActivity"
-            android:exported="true"
-            android:label="@string/title_activity_bottom">
-
-        </activity>
-        <activity
-            android:name=".main.MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-    </application>
-</manifest>
-
+    </manifest>

@@ -18,12 +18,12 @@ class DetailFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        (activity as MainActivity?)?.showIcon()
+        // (activity as MainActivity?)?.showIcon() ---> no se usa en el drawer acivity por eso se comenta
     }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
+        savedInstanceState: Bundle? 
     ): View {
         detailBinding = FragmentDetailBinding.inflate(inflater, container, false)
         return detailBinding.root

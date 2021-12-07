@@ -12,7 +12,7 @@ class SettingsFragment : PreferenceFragmentCompat() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setHasOptionsMenu(true)
-        (activity as MainActivity?)?.showIcon()
+       // (activity as MainActivity?)?.showIcon() ---- no se usa en e drawer activity
     }
 
     override fun onCreatePreferences(savedInstanceState: Bundle?, rootKey: String?) {
