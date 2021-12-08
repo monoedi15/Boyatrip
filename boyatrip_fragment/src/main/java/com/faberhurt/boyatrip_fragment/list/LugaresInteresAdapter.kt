@@ -30,6 +30,12 @@ class LugaresInteresAdapter (
 
     override fun getItemCount(): Int = lugarisinteresList.size
 
+    fun appendItems(newItems: ArrayList<SitiosInteresItem>){
+        lugarisinteresList.clear()
+        lugarisinteresList.addAll(newItems)
+        notifyDataSetChanged()
+    }
+
     class LugaresViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
         private var tituloPOTextView : TextView = itemView.findViewById(R.id.tituloPO_text_view)
         private var puntuacionPOTextview : TextView = itemView.findViewById(R.id.puntuacionPO_text_view)
