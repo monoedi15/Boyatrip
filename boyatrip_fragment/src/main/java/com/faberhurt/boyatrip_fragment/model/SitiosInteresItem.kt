@@ -4,7 +4,7 @@ package com.faberhurt.boyatrip_fragment.model
 import com.google.gson.annotations.SerializedName
 import java.io.Serializable
 
-data class SitiosInteresItem(
+data class  SitiosInteresItem(
     @SerializedName("descripcion")
     val descripcion: String,
     @SerializedName("nombre")
