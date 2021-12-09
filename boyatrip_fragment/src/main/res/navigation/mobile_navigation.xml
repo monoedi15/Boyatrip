@@ -28,12 +28,20 @@
         <argument
             android:name="sitioTuristico"
             app:argType="com.faberhurt.boyatrip_fragment.model.SitiosInteresItem" />
+        <action
+            android:id="@+id/action_navigation_detail_to_mapsFragment"
+            app:destination="@id/mapsFragment" />
     </fragment>
 
     <fragment
         android:id="@+id/navigation_preference"
         android:name="com.faberhurt.boyatrip_fragment.preference.SettingsFragment"
         android:label="SettingsFragment" />
+    <fragment
+        android:id="@+id/mapsFragment"
+        android:name="com.faberhurt.boyatrip_fragment.maps.MapsFragment"
+        android:label="fragment_maps"
+        tools:layout="@layout/fragment_maps" />
 
 
 </navigation>
