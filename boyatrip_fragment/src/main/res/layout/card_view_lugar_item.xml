@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
@@ -21,33 +20,32 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="290dp">
 
             <ImageView
                 android:id="@+id/picture_image_view"
-                android:layout_width="150dp"
+                android:layout_width="wrap_content"
                 android:layout_height="150dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
-                android:layout_marginBottom="16dp"
-                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginEnd="16dp"
+                android:contentDescription="@null"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/catedral"
-                android:contentDescription="@null" />
+                app:srcCompat="@drawable/catedral" />
 
             <TextView
                 android:id="@+id/tituloPO_text_view"
                 style="@style/Title_Place"
-                android:layout_width="154dp"
-                android:layout_height="46dp"
+                android:layout_width="217dp"
+                android:layout_height="21dp"
+                android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
                 android:text="@string/catedral"
                 android:textSize="16sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.525"
-                app:layout_constraintStart_toEndOf="@+id/picture_image_view"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/picture_image_view" />
 
             <TextView
                 android:id="@+id/puntuacionPO_text_view"
@@ -58,20 +56,21 @@
                 android:layout_marginTop="8dp"
                 android:text="@string/Puntuacion"
                 android:textSize="14sp"
-                app:layout_constraintStart_toEndOf="@+id/picture_image_view"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tituloPO_text_view" />
 
             <TextView
                 android:id="@+id/descripcionPO_text_view"
-                android:layout_width="166dp"
-                android:layout_height="59dp"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
                 android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="8dp"
                 android:layout_marginEnd="16dp"
                 android:text="@string/DespricionPO1"
                 android:textSize="12sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/picture_image_view"
+                app:layout_constraintHorizontal_bias="0.476"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/puntuacionPO_text_view" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>

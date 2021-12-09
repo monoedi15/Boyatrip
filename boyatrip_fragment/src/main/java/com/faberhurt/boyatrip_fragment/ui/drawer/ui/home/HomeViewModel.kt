@@ -1,4 +1,4 @@
-package com.faberhurt.boyatrip_fragment.drawer.ui.home
+package com.faberhurt.boyatrip_fragment.ui.drawer.ui.home
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

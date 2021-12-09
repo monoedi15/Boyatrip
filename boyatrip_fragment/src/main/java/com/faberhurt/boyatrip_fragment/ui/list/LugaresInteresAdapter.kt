@@ -1,4 +1,4 @@
-package com.faberhurt.boyatrip_fragment.list
+package com.faberhurt.boyatrip_fragment.ui.list
 
 import android.view.LayoutInflater
 import android.view.View

@@ -1,4 +1,4 @@
-package com.faberhurt.boyatrip_fragment.main
+package com.faberhurt.boyatrip_fragment.ui.main
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -9,7 +9,7 @@ import androidx.appcompat.app.ActionBar
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
 import com.faberhurt.boyatrip_fragment.R
-import com.faberhurt.boyatrip_fragment.preference.SettingsFragment
+import com.faberhurt.boyatrip_fragment.ui.preference.SettingsFragment
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

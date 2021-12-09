@@ -1,4 +1,4 @@
-package com.faberhurt.boyatrip_fragment.drawer
+package com.faberhurt.boyatrip_fragment.ui.drawer
 
 import android.os.Bundle
 import android.view.Menu

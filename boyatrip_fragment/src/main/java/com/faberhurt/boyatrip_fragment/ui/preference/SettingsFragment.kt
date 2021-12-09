@@ -1,11 +1,11 @@
-package com.faberhurt.boyatrip_fragment.preference
+package com.faberhurt.boyatrip_fragment.ui.preference
 
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuInflater
 import androidx.preference.PreferenceFragmentCompat
 import com.faberhurt.boyatrip_fragment.R.*
-import com.faberhurt.boyatrip_fragment.main.MainActivity
+import com.faberhurt.boyatrip_fragment.ui.main.MainActivity
 
 class SettingsFragment : PreferenceFragmentCompat() {
 

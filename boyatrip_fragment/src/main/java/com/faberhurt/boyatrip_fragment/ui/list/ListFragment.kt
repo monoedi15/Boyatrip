@@ -9,9 +9,9 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.faberhurt.boyatrip_fragment.databinding.FragmentListBinding
-import com.faberhurt.boyatrip_fragment.list.ListViewModel
-import com.faberhurt.boyatrip_fragment.list.LugaresInteresAdapter
-import com.faberhurt.boyatrip_fragment.main.MainActivity
+import com.faberhurt.boyatrip_fragment.ui.list.ListViewModel
+import com.faberhurt.boyatrip_fragment.ui.list.LugaresInteresAdapter
+import com.faberhurt.boyatrip_fragment.ui.main.MainActivity
 import com.faberhurt.boyatrip_fragment.model.SitiosInteresItem
 
 class ListFragment : Fragment() {
@@ -34,8 +34,9 @@ class ListFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         (activity as MainActivity?)?.hideIcon()
-        listViewModel.loadMockListaLugaresFromJson(context?.assets?.open("sitiosInteres.json"))
+       // listViewModel.loadMockListaLugaresFromJson(context?.assets?.open("sitiosInteres.json"))
 
+        listViewModel.getSitiosInteresFromServer()
         listViewModel.onListalugaresLoaded.observe(viewLifecycleOwner, { result ->
             onListaLugaresLoadedSubscribe(result)
         })
