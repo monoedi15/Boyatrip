@@ -22,7 +22,7 @@
 
     <fragment
         android:id="@+id/navigation_detail"
-        android:name="com.faberhurt.boyatrip_fragment.detail.DetailFragment"
+        android:name="com.faberhurt.boyatrip_fragment.ui.detail.DetailFragment"
         android:label="DetailFragment"
         tools:layout="@layout/fragment_detail">
         <argument
@@ -35,7 +35,7 @@
 
     <fragment
         android:id="@+id/navigation_preference"
-        android:name="com.faberhurt.boyatrip_fragment.preference.SettingsFragment"
+        android:name="com.faberhurt.boyatrip_fragment.ui.preference.SettingsFragment"
         android:label="SettingsFragment" />
     <fragment
         android:id="@+id/mapsFragment"

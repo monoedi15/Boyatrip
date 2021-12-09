@@ -1,13 +1,13 @@
-package com.faberhurt.boyatrip_fragment.drawer.ui.slideshow
+package com.faberhurt.boyatrip_fragment.ui.drawer.ui.gallery
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class SlideshowViewModel : ViewModel() {
+class GalleryViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
-        value = "This is slideshow Fragment"
+        value = "This is gallery Fragment"
     }
     val text: LiveData<String> = _text
-}
+}//TODO

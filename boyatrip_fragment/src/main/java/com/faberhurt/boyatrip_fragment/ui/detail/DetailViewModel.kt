@@ -1,4 +1,4 @@
-package com.faberhurt.boyatrip_fragment.detail
+package com.faberhurt.boyatrip_fragment.ui.detail
 
 import androidx.lifecycle.ViewModel
 
