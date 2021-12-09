@@ -25,13 +25,26 @@
             style="@style/Title_Place"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="25dp"
-            android:layout_marginTop="2dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="24dp"
             android:text="@string/IglesiaTrinidad"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/picture_image_view" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="12dp"
+            app:layout_constraintEnd_toStartOf="@+id/textView3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nombre_text_view"
+            app:srcCompat="@drawable/ic_baseline_location_on_24" />
 
         <TextView
             android:id="@+id/textView3"
@@ -47,23 +60,23 @@
         <TextView
             android:id="@+id/calificacion_text_view"
             style="@style/Text_Description"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="240dp"
-            android:layout_marginTop="8dp"
+            android:layout_width="35dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="32dp"
             android:text="@string/ValueCalification"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/califiacion_localizacion_text_view" />
+            app:layout_constraintStart_toEndOf="@+id/califiacion_localizacion_text_view"
+            app:layout_constraintTop_toBottomOf="@+id/nombre_text_view" />
 
         <TextView
             android:id="@+id/califiacion_localizacion_text_view"
             style="@style/Text_Description"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="240dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="32dp"
             android:text="@string/Calification"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView3"
             app:layout_constraintTop_toBottomOf="@+id/nombre_text_view" />
 
         <TextView
@@ -71,7 +84,7 @@
             style="@style/Text_Subtitles"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="152dp"
+            android:layout_marginTop="130dp"
             android:text="@string/title_description"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.084"
@@ -105,32 +118,21 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/descripcion_text_view" />
 
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="362dp"
-            android:layout_height="363dp"
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="0dp"
+            android:layout_height="300dp"
             android:layout_marginStart="24dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="16dp"
             android:layout_marginEnd="24dp"
+            android:layout_marginBottom="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/label_localizacion_text_view"
-            app:srcCompat="@drawable/mapa_iglesia_trinidad"
-            tools:ignore="ContentDescription,ImageContrastCheck" />
-
-        <ImageButton
-            android:id="@+id/imageButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:minHeight="48dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/label_localizacion_text_view"
-            app:srcCompat="@drawable/ic_map_"
-            tools:ignore="SpeakableTextPresentCheck"
-            android:contentDescription="@null" />
-
+            app:layout_constraintVertical_bias="0.0" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
