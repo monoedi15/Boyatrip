@@ -44,7 +44,7 @@ class DetailFragment : Fragment() {
                 .title(sitio.nombre)
                 .snippet(sitio.nombre)
         )
-        googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(posSitio,10F))
+        googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(posSitio,18F))
     }
 
 

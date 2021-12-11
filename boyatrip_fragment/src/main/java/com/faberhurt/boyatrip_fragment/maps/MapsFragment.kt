@@ -37,7 +37,7 @@ class MapsFragment : Fragment() {
                 .title(sitio.nombre)
                 .snippet(sitio.nombre)
         )
-        googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(posSitio,15F))
+        googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(posSitio,18F))
     }
 
     override fun onCreateView(
