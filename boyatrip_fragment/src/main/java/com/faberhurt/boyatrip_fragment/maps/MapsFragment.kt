@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.navArgs
 import com.faberhurt.boyatrip_fragment.R
 
 import com.google.android.gms.maps.CameraUpdateFactory
@@ -15,8 +16,9 @@ import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
 
 class MapsFragment : Fragment() {
+    private val args : MapsFragmentArgs by navArgs()
 
-    /*private val callback = OnMapReadyCallback { googleMap ->
+    private val callback = OnMapReadyCallback { googleMap ->
         /**
          * Manipulates the map once available.
          * This callback is triggered when the map is ready to be used.
@@ -26,19 +28,17 @@ class MapsFragment : Fragment() {
          * install it inside the SupportMapFragment. This method will only be triggered once the
          * user has installed Google Play services and returned to the app.
          */
-        val sydney = LatLng(-34.0, 151.0)
-        googleMap.addMarker(MarkerOptions().position(sydney).title("Marker in Sydney"))
-        googleMap.moveCamera(CameraUpdateFactory.newLatLng(sydney))
+        val sitio = args.sitio
 
-        val catedralDuitama = LatLng(5.8282788,-73.0363413)
+        val posSitio = LatLng(sitio.latitud.toDouble(), sitio.longitud.toDouble())
         googleMap.addMarker(
             MarkerOptions()
-                .position(catedralDuitama)
-                .title("Catedral de Duitama")
-                .snippet("Duitama, Boyacá")
+                .position(posSitio)
+                .title(sitio.nombre)
+                .snippet(sitio.nombre)
         )
-        googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(catedralDuitama,15F))
-    }*/
+        googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(posSitio,15F))
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater,

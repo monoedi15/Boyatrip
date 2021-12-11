@@ -1,6 +1,6 @@
 package com.faberhurt.boyatrip_fragment.data
 
-class SitiosInteresRepository {
+class  SitiosInteresRepository {
 
     suspend fun getSitiosInteres() = ApiFactory.retrofit.getSitiosinteres()
 }

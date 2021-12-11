@@ -12,7 +12,7 @@ import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 import java.io.InputStream
 
-class ListViewModel : ViewModel() {
+class  ListViewModel : ViewModel() {
 
     private var listaLugaresLoad : MutableLiveData<ArrayList<SitiosInteresItem>> = MutableLiveData()
     val onListalugaresLoaded : LiveData<ArrayList<SitiosInteresItem>> = listaLugaresLoad
