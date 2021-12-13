@@ -25,7 +25,6 @@ class DetalleActivity : AppCompatActivity() {
 
         }
 
-
     }
 }
 // configg

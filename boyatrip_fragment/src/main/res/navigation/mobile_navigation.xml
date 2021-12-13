@@ -22,18 +22,30 @@
 
     <fragment
         android:id="@+id/navigation_detail"
-        android:name="com.faberhurt.boyatrip_fragment.detail.DetailFragment"
+        android:name="com.faberhurt.boyatrip_fragment.ui.detail.DetailFragment"
         android:label="DetailFragment"
         tools:layout="@layout/fragment_detail">
         <argument
-            android:name="sitioTuristico"
+            android:name="sitio"
             app:argType="com.faberhurt.boyatrip_fragment.model.SitiosInteresItem" />
+        <action
+            android:id="@+id/action_navigation_detail_to_mapsFragment"
+            app:destination="@id/mapsFragment" />
     </fragment>
 
     <fragment
         android:id="@+id/navigation_preference"
-        android:name="com.faberhurt.boyatrip_fragment.preference.SettingsFragment"
+        android:name="com.faberhurt.boyatrip_fragment.ui.preference.SettingsFragment"
         android:label="SettingsFragment" />
+    <fragment
+        android:id="@+id/mapsFragment"
+        android:name="com.faberhurt.boyatrip_fragment.maps.MapsFragment"
+        android:label="fragment_maps"
+        tools:layout="@layout/fragment_maps" >
+        <argument
+            android:name="sitio"
+            app:argType="com.faberhurt.boyatrip_fragment.model.SitiosInteresItem" />
+    </fragment>
 
 
 </navigation>
